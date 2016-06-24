@@ -41,8 +41,8 @@ public class StatsActivity extends AppCompatActivity {
     private TextView cstatTxt, pstatTxt, errorTxt;
     private static Button frmBtn, tillBtn, showBtn;
     private ProgressDialog progressDialog;
-    private static String fromDate="";
-    private static String toDate="";
+    private static String fromDate = "";
+    private static String toDate = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -217,8 +217,11 @@ public class StatsActivity extends AppCompatActivity {
         }
         c_sd = Math.sqrt(c_dev/n);
         p_sd = Math.sqrt(p_dev/n);
-        cstatTxt.setText("Concentration Stats\nMean: "+c_avg+"\nStandard Deviation: "+c_sd);
-        pstatTxt.setText("Pressure Stats\nMean: "+p_avg+"\nStandard Deviation: "+p_sd);
+        String c_dat = "Concentration Stats\n\nMean: "+String.valueOf(c_avg)+"\nStandard Deviation: "+String.valueOf(c_sd);
+        String p_dat = "Pressure Stats\n\nMean: "+String.valueOf(p_avg)+"\nStandard Deviation: "+String.valueOf(p_sd);
+        cstatTxt.setText(c_dat);
+        pstatTxt.setText(p_dat);
+        //Toast.makeText(getApplicationContext(), "Data: " + p_dat, Toast.LENGTH_LONG).show();
     }
 
     @Override

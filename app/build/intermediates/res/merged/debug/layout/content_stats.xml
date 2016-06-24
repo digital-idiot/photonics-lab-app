@@ -13,11 +13,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/scrolView">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:id="@+id/view">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_below="@+id/view"
+                android:id="@+id/errs" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -38,7 +47,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="to"
-                android:textSize="18dp"/>
+                android:textSize="18dp"
+                android:gravity="center"/>
             <Button
                 android:id="@+id/till"
                 android:layout_weight="0.20"
@@ -50,10 +60,9 @@
 
             <Button
                 android:id="@+id/getSats"
-                android:layout_weight="0.30"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
+                android:gravity="center"
                 android:layout_marginTop="15dp"
                 android:text="Show Stats"/>
 
@@ -71,8 +80,7 @@
                 android:layout_marginRight="30dp"/>
 
             <TextView android:text="Pressure Stats"
-                android:id="@+id/pressure"
-                android:layout_below="@+id/pstat"
+                android:id="@+id/pstat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#4CAF50"
@@ -87,12 +95,5 @@
         </LinearLayout>
 
     </ScrollView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:id="@+id/errs"
-        android:layout_above="@+id/scrolView"/>
 
 </RelativeLayout>
