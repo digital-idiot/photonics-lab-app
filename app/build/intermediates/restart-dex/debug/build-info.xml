@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86_64"
+    api-level="23"
+    density="280dpi"
+    format="7"
+    timestamp="18603870177065"
+    token="7113726670625708077" >
+
+    <task
+        name="javac"
+        duration="222" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="125" />
+    <task
+        name="verifier"
+        duration="14" />
+
+    <artifact
+        location="/home/abhisek/Work/PhotonicsLabAndroid/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="18603870177065" >
+        <artifact
+            location="/home/abhisek/Work/PhotonicsLabAndroid/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

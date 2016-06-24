@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="f96b4a0bff1598f05fa6e2d3a1643b8c2f02a3be">
+        <dex dex="/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_e0b3d84441a2f038676fbfe6aab64a5585e82f7d/classes.dex" />
+    </item>
+    <item
+        jar="/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="72961d8b453b46e277702f18de9d210bc019e36e">
+        <dex dex="/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.2.1_4a74286d4aa0248700570f8ef1839891b5cfe8b2/classes.dex" />
+    </item>
+    <item
+        jar="/home/abhisek/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.2.1/support-annotations-23.2.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.2.1_f4dafc7fa161145daedd7eeebea737b61ea34679/classes.dex" />
+    </item>
+    <item
+        jar="/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
+        <dex dex="/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.2.1_48b76f08a7dac90b80a9747977dbdb790dafd360/classes.dex" />
+    </item>
+    <item
+        jar="/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/libs/internal_impl-23.2.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.2.1_0fa0e29e44acdcb1d594e96545ffccddc09c13cc/classes.dex" />
+    </item>
+    <item
+        jar="/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/exploded-aar/com.mcxiaoke.volley/library-aar/1.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="e40b9a81989bd4a846018551c280f8c4d837bf2e">
+        <dex dex="/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.mcxiaoke.volley-library-aar-1.0.0_a563c1bc2320072a20de988da109665b6901958c/classes.dex" />
+    </item>
+    <item
+        jar="/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
+        <dex dex="/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.2.1_e685a5bc7fcffc735b5492b96f87f0e72983643e/classes.dex" />
+    </item>
+    <item
+        jar="/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="2fba40ccd2256b32870c180617bb23884b9b132a">
+        <dex dex="/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a93dad83162b7e5cd64da42491e8281a0694e58c/classes.dex" />
+    </item>
+    <item
+        jar="/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/exploded-aar/com.jjoe64/graphview/4.0.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="37bf8de5b4f9e7e93006db783b9b3168e32e38e9">
+        <dex dex="/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.jjoe64-graphview-4.0.1_695fa91d5c85159bd2ef77fded77520e0dad4128/classes.dex" />
+    </item>
+    <item
+        jar="/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
+        <dex dex="/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.2.1_49c303eb2eebb206547a1794553372e5c2531691/classes.dex" />
+    </item>
+    <item
+        jar="/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.2.1_8892ec5d5a2e33106f0f4b0b8f85707e5105e6c3/classes.dex" />
+    </item>
+    <item
+        jar="/home/abhisek/.gradle/caches/modules-2/files-2.1/com.github.PhilJay/MPAndroidChart/v2.2.5/e135072797f494a3b6cb10640dd8c6495261b9ac/MPAndroidChart-v2.2.5.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="e135072797f494a3b6cb10640dd8c6495261b9ac">
+        <dex dex="/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/MPAndroidChart-v2.2.5_e3ff351abaa0efcde0fb7f82dace94fb38da0f65/classes.dex" />
+    </item>
+    <item
+        jar="/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="673d77a5bbddd766037f088e775df525c46407f0">
+        <dex dex="/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.2.1_bc8702fab3267dd2176e18cc566a96965fd24930/classes.dex" />
+    </item>
+
+</items>
