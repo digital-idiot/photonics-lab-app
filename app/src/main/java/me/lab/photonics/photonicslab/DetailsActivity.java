@@ -46,6 +46,7 @@ public class DetailsActivity extends AppCompatActivity {
     private ProgressDialog progressDialog;
     private TextView errorTxt;
     private String selectedGraph;
+    //private ArrayList<DayData> dayData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,7 +75,7 @@ public class DetailsActivity extends AppCompatActivity {
                 } else {
                     errorTxt.setText("");
                     selectedGraph = "concentration";
-                    String url = "https://profarup.herokuapp.com/getDataFromServer/graphData";
+                    String url = "https://profarup.herokuapp.com/getDataFromServer/dayData";
                     Volley.newRequestQueue(getApplicationContext()).add(jsongetRequestQueueVolley(url));
                     startProgressBar();
                 }
@@ -89,7 +90,7 @@ public class DetailsActivity extends AppCompatActivity {
                 } else {
                     errorTxt.setText("");
                     selectedGraph = "pressure";
-                    String url = "https://profarup.herokuapp.com/getDataFromServer/graphData";
+                    String url = "https://profarup.herokuapp.com/getDataFromServer/dayData";
                     Volley.newRequestQueue(getApplicationContext()).add(jsongetRequestQueueVolley(url));
                     startProgressBar();
                 }
@@ -99,14 +100,15 @@ public class DetailsActivity extends AppCompatActivity {
         graphDisp.getViewport().setScalable(true);
     }
 
-    private DataPoint[] generateDateData(JSONArray graphDataPoints, String date) {
+    private DataPoint[] generateDateData(JSONArray graphDataPoints) {
 
-        DataPoint[] values1 = new DataPoint[graphDataPoints.length()];
-        DataPoint[] values2 = new DataPoint[graphDataPoints.length()];
+        DataPoint[] values = new DataPoint[graphDataPoints.length()];
+        //DataPoint[] values2 = new DataPoint[graphDataPoints.length()];
         //String x1[] = new String[graphDataPoints.length()];
         ArrayList<String> xl1 = new ArrayList<>();
         for (int i=0; i<graphDataPoints.length(); i++) {
             try {
+                /*
                 JSONObject jsonObject = graphDataPoints.getJSONObject(i);
                 String dateS = jsonObject.getString("date");
                 if(dateS.equals(date)) {
@@ -118,28 +120,31 @@ public class DetailsActivity extends AppCompatActivity {
                     DataPoint dataPoint2 = new DataPoint(i, z);
                     values2[i] = dataPoint2;
                 }
+                */
+                JSONObject jsonObject = graphDataPoints.getJSONObject(i);
+                DataPoint dp = new DataPoint(0,0);
+                if(selectedGraph.equalsIgnoreCase("concentration")){
+                    //dayData.add(i,new DayData(jsonObject.getString("time"), jsonObject.getString("concentration")));
+                    dp = new DataPoint((double)i, Double.parseDouble(jsonObject.getString("concentration")));
+                    xl1.add(jsonObject.getString("time"));
+                }
+                else if(selectedGraph.equalsIgnoreCase("pressure")){
+                    //dayData.add(i,new DayData(jsonObject.getString("time"), jsonObject.getString("pressure")));
+                    dp = new DataPoint((double)i, Double.parseDouble(jsonObject.getString("pressure")));
+                    xl1.add(jsonObject.getString("time"));
+                }
+                values[i] = dp;
 
             }catch (JSONException e){
                 Log.d("error JSONException", e.toString());
             }
         }
+        //Log.d("dayData", dayData.get(0).getData());
         graphDisp.removeAllSeries();
-        LineGraphSeries<DataPoint> series = new LineGraphSeries<>(values1);
-
-        if(selectedGraph.equalsIgnoreCase("concentration")){
-            series.resetData(values1);
-            //series.setSpacing(20);
-            series.setColor(Color.rgb(33,150,243));
-            //series.setDrawValuesOnTop(true);
-            //series.setValuesOnTopColor(Color.RED);
-        }
-        if (selectedGraph.equalsIgnoreCase("pressure")){
-            series.resetData(values2);
-            //series.setSpacing(20);
-            series.setColor(Color.rgb(76,175,80));
-            //series.setDrawValuesOnTop(true);
-            //series.setValuesOnTopColor(Color.RED);
-        }
+        LineGraphSeries<DataPoint> series = new LineGraphSeries<>(values);
+        series.resetData(values);
+        //series.setSpacing(20);
+        series.setColor(Color.rgb(33,150,243));
 
         // for x-axis labelling
         String[] x1 = new String[xl1.size()];
@@ -151,7 +156,7 @@ public class DetailsActivity extends AppCompatActivity {
         graphDisp.addSeries(series);
         graphDisp.setHorizontalScrollBarEnabled(true);
         graphDisp.getViewport().setScrollable(true);
-        return values1;
+        return values;
     }
 
     @Override
@@ -177,9 +182,8 @@ public class DetailsActivity extends AppCompatActivity {
                         errorTxt.setText("No data found");
                         errorTxt.setTextColor(Color.RED);
                         graphDisp.removeAllSeries();
-                        return;
                     }else {
-                        generateDateData(result,dDate);
+                        generateDateData(result);
                     }
 
                 } catch (JSONException e) {
@@ -205,7 +209,7 @@ public class DetailsActivity extends AppCompatActivity {
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<>();
                 headers.put("Content-Type", "application/json");
-                headers.put("date", dDate);
+                headers.put("day", dDate);
                 //headers.put("to", toDate);
                 return headers;
             }

@@ -4,30 +4,42 @@
     api-level="23"
     density="hdpi"
     format="7"
-    timestamp="12160198072721"
+    timestamp="11366664732083"
     token="7113726670625708077" >
 
     <task
         name="javac"
-        duration="674" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="243" />
+        duration="0" />
     <task
         name="verifier"
-        duration="53" />
+        duration="0" />
 
     <artifact
-        location="/home/abhisek/Work/PhotonicsLabAndroid/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
+        location="/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/res/resources-debug.ap_"
+        type="RESOURCES" />
 
-    <build timestamp="12160198072721" >
+    <build timestamp="10882269249988" >
         <artifact
             location="/home/abhisek/Work/PhotonicsLabAndroid/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="11062076116523"
+        verifier="CLASS_ADDED" >
+        <artifact
+            location="/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
+            type="DEX" />
+    </build>
+    <build timestamp="11366664732083" >
+        <artifact
+            location="/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/res/resources-debug.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>

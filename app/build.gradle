@@ -31,5 +31,5 @@ dependencies {
 
     compile 'com.jjoe64:graphview:4.0.1'
     compile 'com.mcxiaoke.volley:library-aar:1.0.0'
-    compile 'com.github.PhilJay:MPAndroidChart:v2.2.5'
+    compile 'com.baoyz.pullrefreshlayout:library:1.2.0'
 }

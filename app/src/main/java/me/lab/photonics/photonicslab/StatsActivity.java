@@ -30,6 +30,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
@@ -173,9 +174,11 @@ public class StatsActivity extends AppCompatActivity {
             int year = c.get(Calendar.YEAR);
             int month = c.get(Calendar.MONTH);
             int day = c.get(Calendar.DAY_OF_MONTH);
-
+            DatePickerDialog datepicker = new DatePickerDialog(getActivity(), this,  year, month, day);
+            //datepicker.getDatePicker().setMaxDate(new Date().getTime());
             // Create a new instance of DatePickerDialog and return it
-            return new DatePickerDialog(getActivity(), this, year, month, day);
+            //return new DatePickerDialog(getActivity(), this, year, month, day);
+            return datepicker;
         }
 
         public void onDateSet(DatePicker view, int year, int month, int day) {
@@ -217,8 +220,8 @@ public class StatsActivity extends AppCompatActivity {
         }
         c_sd = Math.sqrt(c_dev/n);
         p_sd = Math.sqrt(p_dev/n);
-        String c_dat = "Concentration Stats\n\nMean: "+String.valueOf(c_avg)+"\nStandard Deviation: "+String.valueOf(c_sd);
-        String p_dat = "Pressure Stats\n\nMean: "+String.valueOf(p_avg)+"\nStandard Deviation: "+String.valueOf(p_sd);
+        String c_dat = "Concentration Statistics\n\nMean: "+String.valueOf(c_avg)+"\nStandard Deviation: "+String.valueOf(c_sd);
+        String p_dat = "Pressure Statistics\n\nMean: "+String.valueOf(p_avg)+"\nStandard Deviation: "+String.valueOf(p_sd);
         cstatTxt.setText(c_dat);
         pstatTxt.setText(p_dat);
         //Toast.makeText(getApplicationContext(), "Data: " + p_dat, Toast.LENGTH_LONG).show();

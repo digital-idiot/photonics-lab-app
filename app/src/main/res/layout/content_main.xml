@@ -28,7 +28,7 @@
         android:textSize="16dp"
         android:typeface="serif"
         android:textColor="#FFFFFF"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"/>
 
@@ -42,7 +42,7 @@
         android:textSize="16dp"
         android:typeface="serif"
         android:textColor="#FFFFFF"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"/>
 
@@ -57,7 +57,7 @@
             android:textSize="16dp"
             android:typeface="serif"
             android:textColor="#FFFFFF"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="15dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"/>
 
@@ -94,7 +94,7 @@
                 android:layout_weight="0.5"
                 android:layout_width="match_parent"
                 android:layout_marginTop="10dp"
-                android:text="Details"
+                android:text="Day Graph"
                 android:id="@+id/detailsbutton" />
         </LinearLayout>
 
@@ -103,9 +103,15 @@
             android:layout_width="wrap_content"
             android:gravity="center"
             android:layout_weight="0.5"
-            android:layout_marginTop="20dp"
             android:text="Statistical Information"
             android:id="@+id/statsbutton"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text="View Day Variation"
+            android:id="@+id/dayGraph" />
 
     </LinearLayout>
 

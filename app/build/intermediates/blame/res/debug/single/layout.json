@@ -20,6 +20,10 @@
         "source": "/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_action_menu_item_layout.xml"
     },
     {
+        "merged": "/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/res/merged/debug/layout/row_daily_data.xml",
+        "source": "/home/abhisek/Work/PhotonicsLabAndroid/app/src/main/res/layout/row_daily_data.xml"
+    },
+    {
         "merged": "/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
         "source": "/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/notification_media_cancel_action.xml"
     },
@@ -72,12 +76,12 @@
         "source": "/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
-        "merged": "/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
-        "source": "/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/notification_template_lines.xml"
-    },
-    {
         "merged": "/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
         "source": "/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
+        "source": "/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/notification_template_lines.xml"
     },
     {
         "merged": "/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
@@ -90,6 +94,10 @@
     {
         "merged": "/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
         "source": "/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/layout/design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/res/merged/debug/layout/content_day_graph.xml",
+        "source": "/home/abhisek/Work/PhotonicsLabAndroid/app/src/main/res/layout/content_day_graph.xml"
     },
     {
         "merged": "/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
@@ -180,6 +188,10 @@
         "source": "/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_list_menu_item_icon.xml"
     },
     {
+        "merged": "/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/res/merged/debug/layout/activity_day_graph.xml",
+        "source": "/home/abhisek/Work/PhotonicsLabAndroid/app/src/main/res/layout/activity_day_graph.xml"
+    },
+    {
         "merged": "/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
         "source": "/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_action_mode_bar.xml"
     },
@@ -204,16 +216,16 @@
         "source": "/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/layout/design_layout_tab_icon.xml"
     },
     {
+        "merged": "/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/res/merged/debug/layout/activity_details.xml",
+        "source": "/home/abhisek/Work/PhotonicsLabAndroid/app/src/main/res/layout/activity_details.xml"
+    },
+    {
         "merged": "/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
         "source": "/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_expanded_menu_layout.xml"
     },
     {
         "merged": "/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
         "source": "/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_alert_dialog_button_bar_material.xml"
-    },
-    {
-        "merged": "/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/res/merged/debug/layout/activity_details.xml",
-        "source": "/home/abhisek/Work/PhotonicsLabAndroid/app/src/main/res/layout/activity_details.xml"
     },
     {
         "merged": "/home/abhisek/Work/PhotonicsLabAndroid/app/build/intermediates/res/merged/debug/layout/content_stats.xml",

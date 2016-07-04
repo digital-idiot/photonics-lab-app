@@ -37,7 +37,7 @@ import org.json.JSONObject;
 public class MainActivity extends AppCompatActivity {
 
     private TextView concTxt, pressureTxt, dateTxt, timeTxt;
-    private Button graphBtn, detailsBtn, statsBtn;
+    private Button graphBtn, detailsBtn, statsBtn, dayGraphBtn;
     private ProgressDialog progressDialog;
 
     @Override
@@ -73,6 +73,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        dayGraphBtn = (Button) findViewById(R.id.dayGraph);
+        dayGraphBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intt = new Intent(MainActivity.this, DayGraph.class);
+                startActivity(intt);
+            }
+        });
+
         // find expenseRequests
         String url = "https://profarup.herokuapp.com/getDataFromServer/recentData";
         Volley.newRequestQueue(getApplicationContext()).add(jsongetRequestQueueVolley(url));

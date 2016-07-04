@@ -64,9 +64,9 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_marginTop="15dp"
-                android:text="Show Stats"/>
+                android:text="Show Statistics"/>
 
-            <TextView android:text="Concentration Stats"
+            <TextView android:text="Concentration Statistics"
                 android:id="@+id/cstat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -79,7 +79,7 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"/>
 
-            <TextView android:text="Pressure Stats"
+            <TextView android:text="Pressure Statistics"
                 android:id="@+id/pstat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
